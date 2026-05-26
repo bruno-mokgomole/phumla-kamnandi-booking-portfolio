@@ -1,0 +1,2 @@
+﻿ALTER TABLE Bookings
+ADD Guests VARCHAR(50) NULL;
