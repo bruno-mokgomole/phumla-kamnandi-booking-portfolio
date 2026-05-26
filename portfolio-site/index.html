@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phumla Kamnandi Hotel Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">C# Windows Forms | SQL Server LocalDB</p>
+          <h1>Phumla Kamnandi Hotel Booking System</h1>
+          <p>
+            A desktop reservation system for hotel reception staff to make, modify,
+            cancel, and enquire about guest bookings while maintaining room occupancy
+            and deposit status.
+          </p>
+          <div class="actions">
+            <a href="#features">View Features</a>
+            <a href="#technical">Technical Summary</a>
+          </div>
+        </div>
+        <div class="app-preview" aria-label="Booking system interface preview">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-body">
+            <h2>Manage Booking</h2>
+            <button>Make Booking</button>
+            <button>Modify Booking</button>
+            <button>Cancel Booking</button>
+            <button>Booking Enquiry</button>
+            <button>View All Bookings</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2>Implemented Use Cases</h2>
+        <div class="grid">
+          <article>
+            <h3>Make Booking</h3>
+            <p>Checks room availability, validates guest details, calculates seasonal pricing, records deposits, and generates booking references.</p>
+          </article>
+          <article>
+            <h3>Modify Booking</h3>
+            <p>Searches by booking reference and updates existing booking dates and guest counts while protecting against overbooking.</p>
+          </article>
+          <article>
+            <h3>Cancel Booking</h3>
+            <p>Marks current bookings as cancelled and releases room availability for future enquiries.</p>
+          </article>
+          <article>
+            <h3>Booking Enquiry</h3>
+            <p>Displays booking reference, room, guest count, check-in/check-out dates, deposit amount, and confirmation status.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <h2>UX Improvements</h2>
+          <ul>
+            <li>Readable white controls across buttons, text boxes, and list boxes.</li>
+            <li>Return-to-home navigation on every workflow window.</li>
+            <li>All bookings list view for quick receptionist lookup.</li>
+            <li>Confirmation screen with send-email and print actions.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Validation</h2>
+          <ul>
+            <li>Check-out date must be after check-in date.</li>
+            <li>At least one adult is required.</li>
+            <li>Maximum of four guests per room.</li>
+            <li>Guest email, date of birth, address, and payment fields are validated before saving.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="technical" class="section">
+        <h2>Technical Summary</h2>
+        <div class="summary">
+          <p><strong>Architecture:</strong> presentation, business, and data-access layers.</p>
+          <p><strong>Database:</strong> SQL Server LocalDB with tables for rooms, guests, bookings, accounts, and seasons.</p>
+          <p><strong>Business rules:</strong> seasonal rates, 10% deposit calculation, room capacity limits, and booking status tracking.</p>
+          <p><strong>Project context:</strong> built from the Phumla Kamnandi Hotels case study requirements.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
